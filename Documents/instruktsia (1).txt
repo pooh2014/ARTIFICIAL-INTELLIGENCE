@@ -1,0 +1,72 @@
+Installing Keras and Tensorflow in Windows
+Installing bleeding edge open source software on a windows machine can end up being very challenging. In this gist I will list out the steps needed to install Keras and Tensorflow in windows machine.
+
+Pre-requisites
+A Windows 10 machine
+Anaconda python distribution
+Steps to set up tensorflow environment
+Open anaconda prompt on your computer (you can search for "anaconda prompt" in the search bar)
+Type the following in the anaconda prompt and hot enter:
+
+conda create --name tensorflow python=3.5 (здесь указываем версию питона, ее можно узнать по команде python -V)
+
+The previous step will create a new python environment, with python 3.5, named as "tensorflow" (you can name this environment to any name that you deem fit, tensorflow is just a name here)
+Now activate your newly created python environment by typing and hitting enter:
+
+activate tensorflow
+
+Now we will install the relevant libraries and packages in this environment
+First we will install jupyter by typing the following into the console:
+
+conda install jupyter
+
+Then we will install scipy:
+
+conda install scipy
+
+After this we will install pandas
+
+conda install pandas
+
+Then we will install seaborn
+
+conda install seaborn
+
+Then, scikitlearn
+
+conda install scikit-learn
+
+Then spyder (optional)
+
+conda install spyder
+
+Now tensorflow
+
+pip install tensorflow
+
+pip install Pillow 
+
+pip install opencv-python
+
+Finally keras
+
+conda install -c conda-forge keras
+
+Now run type:
+
+ipython
+
+This will open up an ipython prompt, within this prompt type:
+
+import tensorflow as tf
+
+import keras
+
+If the above runs without error, then you have successfully installed tensorflow and keras. Now, to run tensorflow or keras, all you need to do is go to anaconda prompt and type:
+
+activate tensorflow
+jupyter notebook
+
+This will start a jupyter notebook in which you can run tensorflow code.
+
+In case there are any issues with the process described here, please leave a comment. I will be actively maintaining this gist,
